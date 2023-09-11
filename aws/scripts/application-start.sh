@@ -20,4 +20,4 @@ ls
 npm install
 npm i --save-dev @types/node
 npm run build
-npm run start
+service npm run start
