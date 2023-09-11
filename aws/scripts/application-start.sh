@@ -2,4 +2,4 @@
 set -xe
 
 # Start Tomcat, the application server.
-service npm run start
+systemctl npm run start
