@@ -23,7 +23,7 @@ jobs:
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
 
     - name: Package to tar
-      run: tar -cvf augmego-web-app.tar *
+      run: tar -cvf ${{ env.applicationfolder }}/target/augmego-web-app.tar *
     
     - name: Upload Artifact to s3
       working-directory: ${{ env.applicationfolder }}/target
