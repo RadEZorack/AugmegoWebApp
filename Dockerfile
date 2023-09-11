@@ -12,7 +12,7 @@ RUN npm install
 # RUN npm ci --omit=dev
 
 # Bundle app source
-COPY ./WebApp .
+COPY ./WebApp/ .
 
 EXPOSE 80
 
