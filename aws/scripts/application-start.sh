@@ -9,6 +9,8 @@ nvm install 16
 # Test
 node -e "console.log('Running Node.js ' + process.version)"
 
+npm install -g typescript
+
 cd /usr/local/node/
 ls
 tar -xvf augmego-web-app.tar.gz -C /usr/local/node/
