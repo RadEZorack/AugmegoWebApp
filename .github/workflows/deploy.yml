@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Deploy Image CI
 
 on:
   push:
@@ -27,8 +27,8 @@ jobs:
         role-to-assume: ${{ secrets.IAMROLE_GITHUB }}
         role-session-name: GitHub-Action-Role
         aws-region: ${{ env.AWS_REGION }}
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    # - name: Build the Docker image
+    #   run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
 
     - name: Package to tar
       run: tar -cvf augmego-web-app.tar *

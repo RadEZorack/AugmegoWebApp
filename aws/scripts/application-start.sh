@@ -9,7 +9,5 @@ nvm install 16
 # Test
 node -e "console.log('Running Node.js ' + process.version)"
 
-cd /usr/local/node/webapps/
-
 # Start Node, the application server.
 npm run start
