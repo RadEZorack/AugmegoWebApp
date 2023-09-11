@@ -17,5 +17,7 @@ tar -xvf augmego-web-app.tar.gz -C /usr/local/node/
 ls
 
 # Start Node, the application server.
+npm install
+npm i --save-dev @types/node
 npm run build
 npm run start
