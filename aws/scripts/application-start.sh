@@ -10,7 +10,9 @@ nvm install 16
 node -e "console.log('Running Node.js ' + process.version)"
 
 ls
-tar -tvf augmego-web-app.tar
+mkdir augmego-web-app
+tar -tvf augmego-web-app.tar -C /augmego-web-app
+cd augmego-web-app
 ls
 
 # Start Node, the application server.
