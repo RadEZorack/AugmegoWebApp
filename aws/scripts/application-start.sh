@@ -11,7 +11,7 @@ node -e "console.log('Running Node.js ' + process.version)"
 
 cd /usr/local/node/
 ls
-tar -xzvf augmego-web-app.tar.gz -C /usr/local/node/
+tar -xvf augmego-web-app.tar.gz -C /usr/local/node/
 ls
 
 # Start Node, the application server.
