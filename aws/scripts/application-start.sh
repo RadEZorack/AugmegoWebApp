@@ -11,7 +11,7 @@ node -e "console.log('Running Node.js ' + process.version)"
 
 ls
 mkdir augmego-web-app
-tar -tvf augmego-web-app.tar -C /augmego-web-app
+tar -xzvf augmego-web-app.tar.gz -C /augmego-web-app
 cd /augmego-web-app
 ls
 
